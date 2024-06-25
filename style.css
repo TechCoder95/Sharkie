@@ -1,0 +1,521 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/pexels-kammeran-gonzalezkeola-9559872.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: url("img/5.Font/LuckiestGuy-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+canvas {
+    background-color: black;
+}
+
+h1 {
+    font-size: 60pt;
+}
+
+
+
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    height: 10px;
+    backdrop-filter: blur(2px);
+}
+
+
+#startscreen {
+    width: 800px;
+    height: 600px;
+    margin-top: 130px;
+    background-image: url("img/3.Background/Legacy/Dark/1.png");
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#controlls {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#startgame {
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.gamebutton {
+    height: 30px;
+    display: flex;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.gameover {
+    width: 400px;
+    margin-top: 200px;
+}
+
+.startgamebutton {
+    width: 300px;
+}
+
+.fullscreenbutton {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.instructions {
+    width: 500px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.startgamebutton:hover {
+    cursor: pointer;
+}
+
+.tryagainbutton {
+    margin-top: 50px;
+    width: 300px;
+    cursor: pointer;
+}
+
+
+.blurfilter {
+    filter: blur(3.5px);
+}
+
+.youwin {
+    margin-top: 200px;
+    height: 120px;
+    width: 320px;
+}
+
+#fixedButtons {
+    position: absolute;
+    display: flex;
+    top: 190px;
+    right: calc(50% - 320px);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+
+#overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container canvas,
+#overlay {
+    position: absolute;
+}
+
+h1 {
+    font-size: 54px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.turnphone {
+    display: none;
+}
+
+.rotate {
+    display: none;
+}
+
+
+@media(min-width: 320px) {
+    /* Your CSS code for min screen width of 320px */
+}
+
+@media(min-width: 480px) {
+    /* Your CSS code for min screen width of 480px */
+}
+
+@media(min-width: 768px) {
+    /* Your CSS code for min screen width of 768px */
+}
+
+@media(min-width: 1024px) {
+    /* Your CSS code for min screen width of 1024px */
+}
+
+@media(min-width: 1280px) {
+    #hud{
+        display: none !important;
+    }
+}
+
+@media(min-width: 1440px) {
+    /* Your CSS code for min screen width of 1440px */
+}
+
+@media(min-width: 1680px) {
+    /* Your CSS code for min screen width of 1680px */
+}
+
+@media(min-width: 1920px) {
+    /* Your CSS code for min screen width of 1920px */
+}
+
+
+@media(max-width: 1650px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 470px;
+    }
+}
+
+@media(max-width: 1550px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 420px;
+    }
+}
+
+@media(max-width: 1400px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 380px;
+    }
+}
+
+@media(max-width: 1350px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 320px;
+    }
+}
+
+@media(max-width: 1270px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 290px;
+    }
+}
+
+@media(max-width: 1200px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 250px;
+    }
+}
+
+@media(max-width: 1120px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 210px;
+    }
+}
+
+@media(max-width: 1025px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 180px;
+    }
+}
+
+@media(max-width: 950px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 130px;
+    }
+}
+
+@media(max-width: 850px) {
+    #fixedButtons {
+        position: absolute;
+        display: flex;
+        top: 190px;
+        right: 80px;
+    }
+}
+
+@media(orientation: portrait) {
+    .turnphone {
+        display: flex;
+        position: absolute;
+        height: 50vh;
+        width: 70vw;
+    }
+
+    body {
+        background-color: aqua;
+    }
+
+    canvas {
+        filter: blur(3.5px);
+    }
+
+    #overlay {
+        filter: blur(3.5px);
+    }
+
+    .gamebutton {
+        filter: blur(3.5px);
+    }
+
+    #stopAudio {
+        display: none;
+    }
+
+    .fullscreen {
+        display: none;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        background-image: url('img/3.Background/1.jpg') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    .gamebutton {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+        margin: 0;
+    }
+
+    #hud {
+        height: 10vh;
+        margin: 0;
+        width: 100%;
+    }
+
+    #fixedButtons {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+
+    h1 {
+        display: none;
+    }
+
+    .gameinstructions {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+        align-items: normal;
+
+    }
+
+    .startgamebutton {
+        margin: 0;
+        width: 300px;
+        z-index: 9999;
+
+    }
+
+    #overlay {
+        width: 100%;
+    }
+
+    #hud {
+        display: flex;
+    }
+
+    #stopAudio {
+        display: none;
+    }
+
+    .fullscreen {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+    body {
+        margin: 0;
+    }
+
+    canvas {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        display: none;
+    }
+
+
+    .gameinstructions {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+        align-items: normal;
+    }
+
+    .startgamebutton {
+        margin: 0;
+        width: 300px;
+
+    }
+
+    #overlay {
+        width: 100%;
+    }
+
+    #stopAudio {
+        display: none;
+    }
+
+    .fullscreen {
+        display: none;
+    }
+
+}
+
+
+
+@media (orientation: landscape) and (max-width: 1000px) {
+
+
+    .canvas {
+        z-index: 0;
+    }
+
+    .mobile {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+        gap: 20px;
+        height: 100px;
+        width: 100vw;
+        backdrop-filter: none;
+
+    }
+    
+    .arrows{
+        margin-left: 10px;
+    }
+
+    .mobile img {
+        width: 120px;
+        height: 80px;
+    }
+
+    #btnAttack {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .fullscreenbutton {
+        display: none;
+    }
+    .instructions {
+        display: none;
+    }
+    #startscreen {
+        height: 100vh;
+        width: 100vw;
+        margin-top: 0px;
+        border-radius: 0px;
+        z-index: 9999;
+    }
+    .startgamebutton {
+        width: 200px;
+        margin-top: 50%;
+    }
+}
+
+.arrows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    width: 124px;
+    gap: 2px;
+}
+
+
+.groese{
+    height: 60px !important;
+    width: 60px !important;
+}

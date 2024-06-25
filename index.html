@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkie</title>
+
+    <link rel="icon" type="image/x-icon" href="img/Favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="classes/sounds.class.js"></script>
+    <script src="classes/drawable-object.class.js"></script>
+    <script src="classes/statusbar_live.class.js"></script>
+    <script src="classes/statusbar_endbosslive.class.js"></script>
+    <script src="classes/statusbar_coins.class.js"></script>
+    <script src="classes/statusbar_poison.class.js"></script>
+    <script src="classes/moveable-object.class.js"></script>
+    <script src="classes/background-object.class.js"></script>
+    <script src="classes/character.class.js"></script>
+    <script src="classes/puffer.class.js"></script>
+    <script src="classes/jelly.class.js"></script>
+    <script src="classes/coin.class.js"></script>
+    <script src="classes/poison.class.js"></script>
+    <script src="classes/endboss.class.js"></script>
+    <script src="classes/keyboard.class.js"></script>
+    <script src="classes/level.class.js"></script>
+    <script src="classes/throwable-object.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="classes/world.class.js"></script>
+    <script src="js/game.js"></script>
+</head>
+
+<body onload="startgame()">
+    <div id="container"></div>
+    <h1 id="headline">Sharkie</h1>
+    <canvas id="canvas" width="720" height="480" class="blurfilter"></canvas>
+
+    <div class="fixedButtons" id="fixedButtons">
+        <img id="stopAudio" src="img/soundon.png" onclick="stopAudio()">
+    </div>
+
+    <div id="overlay">
+    </div>
+
+    <div id="hud" class="mobile"> 
+        <div class="arrows">
+            <button class="gamebutton groese" id="btnMoveUP" onclick="mobileMoveUP()" style="background-image: url(img/6.Botones/Key/arrows/UP.png);"></button>
+            <button class="gamebutton groese" id="btnMoveDOWN" onclick="mobileMoveDOWN()" style="background-image: url(img/6.Botones/Key/arrows/DOWN.png);"></button>
+            <button class="gamebutton groese" id="btnMoveLEFT" onclick="mobileMoveLEFT()" style="background-image: url(img/6.Botones/Key/arrows/LEFT.png);"></button>
+            <button class="gamebutton groese" id="btnMoveRIGHT" onclick="mobileMoveRIGHT()" style="background-image: url(img/6.Botones/Key/arrows/RIGHT.png);"></button>
+        </div>
+
+        <img class="gamebutton" id="btnAttack" onclick="mobileShoot()" src="img/6.Botones/Key/D key.png">
+    </div>
+
+</body>
+
+</html>
